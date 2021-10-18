@@ -72,7 +72,7 @@ const useStyles = makeStyles((theme) => ({
 function BangLuong(props) {
     const TOKEN = sessionStorage.getItem('token')
     const URL_API_GET_BANGLUONG =
-        'https://qlnsclouds.herokuapp.com/bangluong/DanhSachBangLuong?token='
+        'https://qlnsclouds.herokuapp.com/bangluong2/DanhSachBangLuong2?token='
     const [UITableBangLuong, setUITableBangLuong] = useState()
     const [isNetWork, setIsNetWork] = useState(true)
     const [loading, setloading] = useState()

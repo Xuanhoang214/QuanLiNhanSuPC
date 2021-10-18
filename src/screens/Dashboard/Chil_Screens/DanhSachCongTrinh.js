@@ -91,7 +91,7 @@ const useStyles = makeStyles((theme) => ({
 var lengthDSCT
 
 function DSCongTrinh(props) {
-    const URL_API = 'https://qlnsclouds.herokuapp.com/congtrinh/'
+    const URL_API = 'https://qlnsclouds.herokuapp.com/congtrinh2/'
     const GET_CONGTRINH = 'ToanBoCongTrinh'
     const DEL_CONGTRINH = 'XoaCongTrinh'
     const ADD_CONGTRINH = 'ThemCongTrinh'

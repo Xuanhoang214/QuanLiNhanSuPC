@@ -97,8 +97,8 @@ function DSNhanVien(props) {
 
     const data_info_person = JSON.parse(sessionStorage.getItem('info'))
 
-    const URL_API = 'https://qlnsclouds.herokuapp.com/truongphong/'
-    const GET_ALL_NHANVIEN = 'ToanBoNhanVien'
+    const URL_API = 'https://qlnsclouds.herokuapp.com/account2/'
+    const GET_ALL_NHANVIEN = 'allNhanVien'
     const DEL_NHANVIEN = 'XoaNhanVien'
     const UPDATE_NHANVIEN = 'CapNhatNhanVien'
     const TOKEN = sessionStorage.getItem('token')

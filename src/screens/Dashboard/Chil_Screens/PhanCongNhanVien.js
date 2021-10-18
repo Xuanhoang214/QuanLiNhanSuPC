@@ -90,7 +90,7 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 function PhanCongNhanVien(props) {
-    const URL_API = 'https://qlnsclouds.herokuapp.com/ngaycong/'
+    const URL_API = 'https://qlnsclouds.herokuapp.com/ngaycong2/'
     const GET_DSNC = 'ToanBoNgayCong'
     const UPDATE_NC = 'CapNhatNgayCong'
     const ADD_NGAYCONG = 'ThemNgayCongCuaNhanVien'
@@ -171,7 +171,7 @@ function PhanCongNhanVien(props) {
                 <TableCell>{stt}</TableCell>
                 <TableCell>{props.MaNV}</TableCell>
                 <TableCell>{props.MaNC}</TableCell>
-                <TableCell>{props.SLNgayCong}</TableCell>
+                <TableCell>{props.SoNgayCong}</TableCell>
                 <TableCell>{props.DateWorking}</TableCell>
                 <TableCell>
                     <Rating

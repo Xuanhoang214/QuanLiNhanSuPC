@@ -85,7 +85,7 @@ function TienDoCongTrinh(props) {
     const classes = useStyles()
     const TOKEN = sessionStorage.getItem('token')
     const data_info_person = JSON.parse(sessionStorage.getItem('info'))
-    const URL_API = 'https://qlnscloud.herokuapp.com/congtrinh/'
+    const URL_API = 'https://qlnsclouds.herokuapp.com/congtrinh2/'
     const GET_CONGTRINH = 'ToanBoCongTrinh'
 
     const [UITableTienDo, setUITableTienDo] = useState()
