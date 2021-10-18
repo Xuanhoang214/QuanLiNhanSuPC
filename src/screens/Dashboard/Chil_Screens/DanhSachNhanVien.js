@@ -97,7 +97,7 @@ function DSNhanVien(props) {
 
     const data_info_person = JSON.parse(sessionStorage.getItem('info'))
 
-    const URL_API = 'https://qlnsclouds.herokuapp.com/truongphong/ToanBoNhanVien'
+    const URL_API = 'https://qlnsclouds.herokuapp.com/truongphong/'
     const GET_ALL_NHANVIEN = 'ToanBoNhanVien'
     const DEL_NHANVIEN = 'XoaNhanVien'
     const UPDATE_NHANVIEN = 'CapNhatNhanVien'
@@ -106,9 +106,9 @@ function DSNhanVien(props) {
     const [dataDSNV, setDataDSNV] = useState()
 
     const URL_UPDATE_NHANVIEN =
-        'https://qlnsclouds.herokuapp.com/account/CapNhatThongTin?token='
+        'https://qlnsclouds.herokuapp.com/account2/CapNhatThongTin?token='
 
-    const URL_CREATE_NHANVIEN = 'https://qlnsclouds.herokuapp.com/account/create'
+    const URL_CREATE_NHANVIEN = 'https://qlnsclouds.herokuapp.com/account2/create'
 
     const [UITableNhanVien, setUITableNhanVien] = useState()
     const [loading, setloading] = useState()
@@ -145,7 +145,7 @@ function DSNhanVien(props) {
     function getDanhSachNhanVien() {
         setloading(true)
         if (window.fetch) {
-            fetch(URL_API + GET_ALL_NHANVIEN)
+            fetch(URL_API + GET_ALL_NHANVIEN + '?token=' + TOKEN)
                 .then((response) => {
                     return response.json()
                 })

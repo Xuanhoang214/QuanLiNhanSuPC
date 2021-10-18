@@ -92,12 +92,12 @@ const useStyles = makeStyles((theme) => ({
 
 function Section() {
     const classes = useStyles()
-    const URL_API = 'https://quanlinhansubeta.herokuapp.com/truongphong/'
+    const URL_API = 'https://qlnsclouds.herokuapp.com/truongphong/'
     const PARAMATER_NHANVIEN = 'ToanBoNhanVien'
     const TOKEN = sessionStorage.getItem('token')
 
     const URP_API_GET_NOTIFYCATION =
-        'https://qlnscloud.herokuapp.com/notify/DanhSachThongBao?token='
+        'https://qlnsclouds.herokuapp.com/notifycation/DanhSachThongBao?token='
 
     const data_info_person = JSON.parse(sessionStorage.getItem('info'))
 
